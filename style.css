@@ -274,9 +274,9 @@ ul { list-style: none; }
 .countdown .beat-ring { position: relative; width: 230px; height: 230px; flex: 0 0 auto; display: grid; place-items: center; }
 .countdown .beat-ring .r { position: absolute; inset: 0; border-radius: 50%; background: var(--ring-1); }
 .countdown .beat-ring .r2 { inset: 9%; background: var(--ring-2); }
-.countdown .beat-ring .core { position: absolute; inset: 18%; border-radius: 50%; background: var(--grad-coral); display: grid; place-items: center; color: #fff; text-align: center; box-shadow: 0 18px 40px -10px rgba(244,114,90,0.6), inset 0 2px 8px rgba(255,255,255,0.4); animation: heartbeat 2.2s ease-in-out infinite; }
+.countdown .beat-ring .core { position: absolute; inset: 18%; border-radius: 50%; background: var(--grad-coral); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center; box-shadow: 0 18px 40px -10px rgba(244,114,90,0.6), inset 0 2px 8px rgba(255,255,255,0.4); animation: heartbeat 2.2s ease-in-out infinite; }
 .countdown .beat-ring .core b { font-family: 'Fredoka', sans-serif; font-size: 3.6rem; font-weight: 700; line-height: 1; }
-.countdown .beat-ring .core span { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; opacity: 0.95; margin-top: 4px; }
+.countdown .beat-ring .core span { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; opacity: 0.95; margin-top: 6px; }
 .countdown .beat-ring .r { animation: heartbeat 2.2s ease-in-out infinite; }
 .countdown .beat-ring .r2 { animation: heartbeat 2.2s ease-in-out infinite 0.04s; }
 .countdown .copy { max-width: 380px; }
