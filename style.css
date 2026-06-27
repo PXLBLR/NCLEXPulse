@@ -427,8 +427,24 @@ ul { list-style: none; }
   background: var(--grad-coral); position: relative; min-height: 260px; overflow: hidden;
   display: flex; align-items: center; justify-content: center;
 }
-.blog-feature .ff-art .ecg-mini { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .55; }
-.blog-feature .ff-art .big-mark { width: 96px; height: 96px; opacity: .96; }
+/* soft glow behind the badge for depth */
+.blog-feature .ff-art::before {
+  content: ""; position: absolute; width: 320px; height: 320px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 68%);
+}
+/* clean horizontal ECG strip — fixed height, vertically centred (no full-height stretch) */
+.blog-feature .ff-art .ecg-mini {
+  position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%);
+  width: 100%; height: 76px; opacity: .42;
+}
+/* lightning mark in a glassy rounded badge */
+.blog-feature .ff-art .big-mark {
+  position: relative; z-index: 1; width: 56px; height: 56px;
+  box-sizing: content-box; padding: 26px;
+  background: rgba(255,255,255,0.18); border: 1.5px solid rgba(255,255,255,0.45);
+  border-radius: 26px; box-shadow: 0 16px 36px -14px rgba(180,60,40,0.55);
+  -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
+}
 .read-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; color: var(--coral-deep); font-weight: 800; }
 .read-link svg { width: 18px; height: 18px; transition: transform .2s var(--ease); }
 .read-link:hover svg { transform: translateX(4px); }
