@@ -6,5 +6,5 @@
     </linearGradient>
   </defs>
   <circle cx="50" cy="50" r="48" fill="url(#coral)"/>
-  <path d="M56 22 L28 56 L50 56 L44 78 L72 44 L50 44 Z" fill="#fff"/>
+  <path d="M84.3 8 L16 45.7 L39.3 59.7 L15.7 92 L83.6 54.5 L60.7 40.1 Z" fill="#fff"/>
 </svg>
