@@ -130,6 +130,8 @@ ul { list-style: none; }
 .btn-ghost { background: #fff; color: var(--text-primary); border-color: var(--border); box-shadow: var(--shadow-xs); }
 .btn-ghost:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: rgba(244,114,90,0.4); color: var(--coral-deep); }
 .btn-lg { padding: 18px 38px; font-size: 1.1rem; }
+.btn-store { width: 46px; height: 46px; padding: 0; flex: 0 0 auto; }
+.btn-store svg { width: 21px; height: 21px; }
 
 /* ---------- pulse logo (CSS app icon) ---------- */
 .pulse-logo { position: relative; width: 72px; height: 72px; flex: 0 0 auto; display: grid; place-items: center; }
@@ -164,6 +166,7 @@ ul { list-style: none; }
 .brand .ring-outer, .brand .ring-middle { display: none; }
 .brand .wordmark { font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 1.24rem; letter-spacing: -0.01em; color: var(--text-primary); }
 .nav .btn { padding: 11px 22px; font-size: 0.94rem; }
+.nav .btn-store { padding: 0; }
 .nav-cta-wrap { display: flex; align-items: center; gap: 14px; }
 .nav-link { font-weight: 700; color: var(--text-secondary); font-size: 0.96rem; transition: color 0.2s; }
 .nav-link:hover { color: var(--coral-deep); }
