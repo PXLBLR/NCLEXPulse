@@ -290,6 +290,7 @@ ul { list-style: none; }
 .cta-band .cta-ecg { position: absolute; left: 0; right: 0; top: 18px; opacity: 0.55; }
 .cta-band h2 { position: relative; color: #fff; font-size: clamp(2rem, 4.6vw, 3.2rem); margin-bottom: 12px; }
 .cta-band p { position: relative; color: rgba(255,255,255,0.95); font-size: 1.18rem; font-weight: 700; margin-bottom: 30px; }
+.badge-row { position: relative; display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap; }
 .badge-link { position: relative; display: inline-block; transition: transform 0.25s var(--ease); }
 .badge-link:hover { transform: translateY(-3px) scale(1.03); }
 .badge-link img { height: 56px; width: auto; filter: drop-shadow(0 10px 24px rgba(0,0,0,0.28)); }
